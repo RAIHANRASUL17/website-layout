@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login file</title>
+    <!-- step 5: font awesome link setup -->
+    <script src="https://kit.fontawesome.com/b692543aa8.js" crossorigin="anonymous"></script>
+    <style>
+        /* step 1: 'login-form' container */
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            border: 5px solid lawngreen;
+        }
+
+        /* step2:'login-from inside input' style*/
+        .login-form input {
+            margin-top: 10px;
+            font-size: 1.5em;
+            padding: 10px 5px;
+        }
+
+        /* step 3:'login-form inside submit style' or input style submit type */
+        .login-form input[type="submit"] {
+            background-color: yellow;
+            border-radius: 20px;
+            border: none;
+            color: red;
+        }
+
+        /* step 4: to center log in form. so you have to to give a name in section class*/
+        .login-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        /* step 5: for'nav anchor' */
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin-top: 10px;
+            font-size: 30px;
+        }
+        /* step 6: for 'font awesome' */
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>creating login file</h1>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="https://www.youtube.com/">Go youtube</a>
+                <a href="https://www.google.com/">Go google</a>
+            </span>
+
+            <!-- for font awesome -->
+            <span>
+                <a href=""><i class="fa-sharp fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-check"></i></a>
+                <a href=""><i class="fa-sharp fa-solid fa-right-from-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <section class="login-container">
+            <form class="login-form">
+                <h3>please login</h3>
+                <input type="email" name="" id="" placeholder="Your Email Please" required>
+                <input type="password" name="" id="" placeholder="Your Password">
+                <input type="submit" value="login">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
