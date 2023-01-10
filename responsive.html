@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Responsive</title>
+    <style>
+        /* step 1: for food styles */
+        .food{
+border: 2px solid burlywood;
+border-radius: 10px;
+padding: 10px 10px;
+        }
+        /* step 2: for good decoration, have to style container */
+        .container{
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        /* step 3: for looking good image, we can responsive to img in food class */
+        .food img{
+width: 75%;
+        }
+        /* step 3: for excellent 'responsive' we can consider images. we will apply'bootstrap break point'that's why we will apply 'media query'. syntax: @media screen and{} */
+        /*1. break point uses for small screen apply for food class */
+        @media screen and (max-width:576px){
+            .food{
+                background-color: orange;
+            }
+        }
+        /* 2.break point uses for medium screen */
+        @media screen and (min-width:577px) and (max-width: 992px){
+            .food{
+                background-color: blueviolet;
+            }
+        }
+        /* step 3:  for container apply for 'grid-templet-column*/
+        /* 1.for smaller device */
+        @media screen and (max-width:576px){
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        /* 2.medium device */
+        @media screen and (min-width:577px) and (max-width: 992px){
+            .container{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container>.food*12>img[src="images/food.jpg"]+h2{item-$}+h4{price:100$}+p>lorem30^button{Order Now} -->
+    <div class="container">
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-1</h2>
+            <h4>price:1001</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quia praesentium est voluptatibus numquam harum cupiditate ea minus vero maxime nam ipsa esse nobis libero, recusandae explicabo exercitationem ex iure?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food-8.jpg" alt="">
+            <h2>item-2</h2>
+            <h4>price:1002</h4>
+            <p>Accusamus aspernatur nesciunt unde? Tempore nihil sequi architecto dolorem recusandae, sunt rerum! Distinctio tenetur culpa porro dolores blanditiis ad. Excepturi architecto consectetur facilis odit quis quas qui magnam? Exercitationem, nihil.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food-9.jpg" alt="">
+            <h2>item-3</h2>
+            <h4>price:1003</h4>
+            <p>Facere quis, recusandae ipsum praesentium, quam error nulla eius laboriosam iure nihil possimus voluptates labore beatae placeat vitae rem quas asperiores odio atque. Sed sapiente repellendus ut animi! Exercitationem, fuga.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-4</h2>
+            <h4>price:1004</h4>
+            <p>Saepe nihil quasi harum rem aut impedit facere, repudiandae veniam, possimus tenetur temporibus, quibusdam et? Quod quam quas, illum dolorum dignissimos cum animi architecto blanditiis saepe quibusdam tempora ratione placeat!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food-8.jpg" alt="">
+            <h2>item-5</h2>
+            <h4>price:1005</h4>
+            <p>Voluptatibus aspernatur qui autem, nostrum excepturi, perspiciatis laudantium reiciendis harum illo odio architecto beatae labore. Id neque, rerum nemo nihil voluptatem ab perspiciatis quia, ratione, illum quas qui non inventore.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food-9.jpg" alt="">
+            <h2>item-6</h2>
+            <h4>price:1006</h4>
+            <p>Itaque voluptatum soluta dolore minima non molestias modi consequuntur illo, corrupti consectetur ratione incidunt repudiandae delectus facilis enim cum? Maiores corporis rerum ratione quibusdam recusandae aliquid atque deserunt, autem laboriosam.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>item-7</h2>
+            <h4>price:1007</h4>
+            <p>Doloribus non earum sed enim, fugiat vero illum harum unde veniam, cupiditate maxime iste, illo ab. Sit, consequatur ratione cupiditate cum quae eum impedit earum ipsam esse vel temporibus commodi!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food-9.jpg" alt="">
+            <h2>item-8</h2>
+            <h4>price:1008</h4>
+            <p>Quia, quae quas? Unde laboriosam omnis dolores sequi voluptas, distinctio libero. Fugit dicta aliquam sit quia pariatur, non voluptate adipisci repudiandae porro minus totam qui nisi repellendus aut suscipit facere.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food-8.jpg" alt="">
+            <h2>item-9</h2>
+            <h4>price:1009</h4>
+            <p>Quis reprehenderit ducimus impedit facilis eius quasi iure natus modi maiores dignissimos, eveniet optio. Delectus minima tempore assumenda dolorum ipsam autem dicta. Harum, neque repellendus aspernatur reprehenderit consequatur ab optio?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food-9.jpg" alt="">
+            <h2>item-10</h2>
+            <h4>price:10010</h4>
+            <p>Culpa quod quibusdam aliquam libero explicabo perferendis blanditiis tempore fugiat minima sint, fugit, laudantium pariatur odit dolorem eligendi labore numquam ipsam ex ipsum reprehenderit saepe! Quidem id labore sequi dignissimos!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food-8.jpg" alt="">
+            <h2>item-11</h2>
+            <h4>price:10011</h4>
+            <p>Necessitatibus doloremque dolores ea beatae, culpa a, laborum nulla in obcaecati sapiente provident corporis eum temporibus similique ex? Tempora nemo labore incidunt deleniti voluptate vel voluptatum, eos libero sint ipsa.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food-9.jpg" alt="">
+            <h2>item-12</h2>
+            <h4>price:10012</h4>
+            <p>Reiciendis numquam at labore animi quod quam doloremque a totam sunt dignissimos, dolore laborum exercitationem consequuntur. Minima vitae quae accusantium excepturi quo quibusdam, maxime autem hic dolorem quos corrupti odit!</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+</body>
+</html>
